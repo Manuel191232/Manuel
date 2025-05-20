@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Newsletter - Manuel Blog</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script>
+        function validarNewsletter(event) {
+            event.preventDefault();
+            const email = document.getElementById('email_news').value.trim();
+            if (!email) {
+                alert('Por favor, insira seu email.');
+                return false;
+            }
+            if (!email.includes('@')) {
+                alert('Por favor, insira um email válido.');
+                return false;
+            }
+            alert('Obrigado por assinar nossa newsletter!');
+            document.getElementById('form_newsletter').reset();
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Manuel Blog</h1>
+</header>
+
+<nav>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="sobre.html"><i class="fas fa-user"></i> Sobre</a>
+    <a href="artigos.html"><i class="fas fa-newspaper"></i> Artigos</a>
+    <a href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
+    <a href="galeria.html"><i class="fas fa-image"></i> Galeria</a>
+    <a href="privacidade.html"><i class="fas fa-user-shield"></i> Privacidade</a>
+    <a href="newsletter.html" class="active"><i class="fas fa-envelope-open-text"></i> Newsletter</a>
+</nav>
+
+<main>
+<section class="destaque">
+    <h2>Assine Nossa Newsletter</h2>
+    <p>Receba as últimas novidades diretamente no seu email!</p>
+    <form id="form_newsletter" onsubmit="validarNewsletter(event)">
+        <label for="email_news">Email:</label>
+        <input type="email" id="email_news" name="email_news" required placeholder="seuemail@exemplo.com" />
+        <button type="submit">Inscrever</button>
+    </form>
+</section>
+</main>
+
+<footer>
+    &copy; 2025 Manuel Blog. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>

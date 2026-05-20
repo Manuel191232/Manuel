@@ -18,7 +18,6 @@ export default function Home() {
       <Stats />
       <About />
       <Services />
-      <Testimonials />
       <Values />
       <CTA />
       <Contact />

@@ -6,6 +6,7 @@ import { Values } from "@/components/values"
 import { CTA } from "@/components/cta"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <CTA />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </main>
   )
 }

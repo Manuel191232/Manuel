@@ -45,7 +45,7 @@ export function Hero() {
                 <span className="text-foreground">GERAMOS RESULTADOS.</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-                A <span className="text-accent font-semibold">Nexus Praxis</span> e uma plataforma de formacao e consultoria que ajuda pessoas e organizacoes a comunicarem melhor, liderarem com eficiencia e alcancarem performance de excelencia.
+                A <span className="text-accent font-semibold">Nexus Praxis</span> é uma plataforma de formação e consultoria que ajuda pessoas e organizações a comunicarem melhor, liderarem com eficiência e alcançarem performance de excelência.
               </p>
             </div>
             
@@ -115,7 +115,7 @@ export function Hero() {
               {/* Overlay card */}
               <div className="absolute bottom-4 left-4 right-4 bg-card/95 backdrop-blur-sm rounded-xl p-4 border border-border shadow-lg">
                 <p className="text-sm font-medium text-foreground">
-                  {`"`}Conectamos conhecimento a pratica, gerando excelencia.{`"`}
+                  {`"`}Conectamos conhecimento a prática, gerando excelência.{`"`}
                 </p>
                 <p className="text-xs text-accent mt-1 font-semibold">— Nexus Praxis</p>
               </div>
